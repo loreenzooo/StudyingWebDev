@@ -1,80 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day 6</title>
-</head>
-<style>
-    body{
-        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        background-color:rgb(243, 243, 243);
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Day 6</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: rgb(243, 243, 243);
+      margin: 0;
+      padding: 0;
     }
-    .title{
-        display: flex;
-        justify-content: center;
-        padding-top: 50px;
-        color:rgb(43, 41, 41);
-    }
-    .blog1, .blog2, .blog3{
-        width: 400px;
-        border: 1px solid black;
-        display: inline-block;
-        padding: 10px;
-        background-color: bisque;
-        
-    }
-    
-    .blog1 img{
-        padding-top:3px;
-        padding-left:3px;
-        width: 350px;
-    }
-    .blog1 p, .blog2 p, .blog3 p{
-        padding-left: 3px;
-    }
-    .blog2 img{
-        width: 250px;
-        padding-top:3px;
-        padding-left:3px;
-    }
-    .blog3 img{
-        padding-top:3px;
-        padding-left:3px;
-        width: 350px;
-    }
-    
-</style>
-<body>
-    <header>
-        <h2 class="title">News Blog</h5>
-    </header>
 
+    .title {
+      display: flex;
+      justify-content: center;
+      padding: 50px 0 20px;
+      color: rgb(43, 41, 41);
+    }
+
+    .blog-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .blog1, .blog2, .blog3 {
+      flex: 1 1 300px;
+      max-width: 400px;
+      border: 1px solid black;
+      background-color: bisque;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .blog1 img, .blog2 img, .blog3 img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .blog1 p, .blog2 p, .blog3 p {
+      padding-left: 3px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2 class="title">News Blog</h2>
+  </header>
+
+  <div class="blog-container">
     <div class="blog1">
-        <img src="img/dogs.webp" alt="dogs">
-        <p>Dogs are friendly and loyal animals that make great pets. They love to play, go for walks, and spend time with their families. 
-            Many dogs enjoy learning tricks and are happy when they are praised. They come in all shapes and sizes, from small and fluffy to big and strong.
-            Dogs are known for being great companions and bringing joy to people's lives.
-        </p>
+      <img src="img/dogs.webp" alt="dogs" />
+      <p>Dogs are friendly and loyal animals that make great pets. They love to play, go for walks, and spend time with their families. 
+        Many dogs enjoy learning tricks and are happy when they are praised. They come in all shapes and sizes, from small and fluffy to big and strong.
+        Dogs are known for being great companions and bringing joy to people's lives.
+      </p>
     </div>
 
     <div class="blog2">
-        <img src="img/coffee.webp" alt="coffee">
-        <p>Coffee is a popular drink made from roasted coffee beans. 
-            Many people enjoy it in the morning because it helps them feel awake and alert. It can be served hot or cold and made in different ways, 
-            like black, with milk, or with sugar. 
-            Coffee has a rich smell and a strong taste that many people love. It's also a common drink to enjoy while relaxing or talking with friends.
-        </p>
+      <img src="img/coffee.webp" alt="coffee" />
+      <p>Coffee is a popular drink made from roasted coffee beans. 
+        Many people enjoy it in the morning because it helps them feel awake and alert. It can be served hot or cold and made in different ways, 
+        like black, with milk, or with sugar. 
+        Coffee has a rich smell and a strong taste that many people love. It's also a common drink to enjoy while relaxing or talking with friends.
+      </p>
     </div>
 
     <div class="blog3">
-        <img src="img/prxchamp.webp" alt="PRX Champ photo">
-        <p>
-            Paper Rex (PRX), the Valorant team from the Pacific region, won the Masters Toronto 2025 tournament by defeating Fnatic (from EMEA) 
-            in the grand final with a 3-1 victory
-            This marked PRX’s first international title, breaking their “runner‑up curse” after previous near-misses in Masters Copenhagen and Champions events
-            Their in-game leader f0rsakeN earned Finals MVP honors for his standout performance and clutch calls throughout the series.
-        </p>
+      <img src="img/prxchamp.webp" alt="PRX Champ photo" />
+      <p>
+        Paper Rex (PRX), the Valorant team from the Pacific region, won the Masters Toronto 2025 tournament by defeating Fnatic (from EMEA) 
+        in the grand final with a 3-1 victory. This marked PRX’s first international title, breaking their “runner‑up curse” after previous near-misses in Masters Copenhagen and Champions events.
+        Their in-game leader f0rsakeN earned Finals MVP honors for his standout performance and clutch calls throughout the series.
+      </p>
     </div>
+  </div>
 </body>
 </html>
