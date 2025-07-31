@@ -1,0 +1,74 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  display: flex;
+  height: 100vh;
+}
+
+aside {
+  background-color: rgb(61, 61, 61);
+  width: 300px;
+  color: rgb(240, 240, 240);
+  padding: 20px 0;
+}
+
+#idPic {
+  width: 100px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 40px auto;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  width: 190px;
+  gap: 25px;
+  cursor: pointer;
+  margin-top: 100px;
+  padding-left: 20px;
+}
+
+.sidebar-nav span {
+  width: 270px;
+  height: 30px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-nav #personal-info {
+  background-color: rgb(130, 130, 130);
+}
+
+.content-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: bisque;
+  color: rgb(61, 61, 61);
+  height: 128px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+main {
+  flex: 1;
+  background-color: antiquewhite;
+  padding-top: 60px;
+  padding-left:20px;
+  flex-direction:column;
+  gap:10px;
+  display:flex;
+}
+main h3{
+   font-weight: normal;
+}
