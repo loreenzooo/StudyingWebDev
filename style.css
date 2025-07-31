@@ -1,0 +1,35 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: auto;
+}
+#idPic {
+  width: 100px;
+  margin-left: 20px;
+  margin-top:50px;
+  border-radius: 50%;
+}
+.sidebar {
+  background-color: rgb(61, 61, 61);
+  width: 300px;
+  height: 779px;
+  color: rgb(240, 240, 240);
+}
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+
+  width: 190px;
+  gap: 25px;
+  cursor: pointer;
+  margin-top: 130px;
+  padding-left: 20px;
+}
+.sidebar-nav span{
+    width: 270px;
+    padding-left:10px;
+    height: 30px;
+}
+.sidebar-nav #personal-info{
+    background-color: rgb(130, 130, 130);
+}
